@@ -18,6 +18,11 @@ const UserSchema = new Schema({
     }
 });
 
+/* const User = mongoose.models && "User" in mongoose.models ? mongoose.models.User : mongoose.model("User", PostSchema);
+export default User;  */
+
 const User = models.User ||  model('User', UserSchema);
 
 export default User
+/* const Product = mongoose.models && "Product" in mongoose.models ? mongoose.models. Product : mongoose.model("Product", PostSchema);
+export default Product; */
